@@ -1,0 +1,13 @@
+{
+  "name": "purchase-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/log && tsc -p packages/domain"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
