@@ -3,11 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "lint": "eslint .",
     "test": "vitest run",
-    "typecheck": "tsc -p packages/log && tsc -p packages/domain"
+    "typecheck": "tsc -p tsconfig.json && tsc -p packages/log && tsc -p packages/domain && tsc -p packages/env-config && tsc -p packages/db"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
     "typescript": "catalog:",
+    "typescript-eslint": "^8.72.0",
     "vitest": "catalog:"
   }
 }

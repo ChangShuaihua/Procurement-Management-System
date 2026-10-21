@@ -1,0 +1,21 @@
+{
+  "name": "@purchase/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@purchase/domain": "workspace:*",
+    "@purchase/env-config": "workspace:*",
+    "@purchase/log": "workspace:*",
+    "@supabase/supabase-js": "^2.86.0"
+  },
+  "devDependencies": {
+    "vitest": "catalog:"
+  }
+}

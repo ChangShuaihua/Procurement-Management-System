@@ -1,8 +1,6 @@
 export type LogLevel = 'debug' | 'info' | 'warn' | 'error'
 
-export interface LogFields {
-  readonly [key: string]: unknown
-}
+export type LogFields = Readonly<Record<string, unknown>>
 
 export interface LogEntry {
   time: string
